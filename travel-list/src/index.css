@@ -1,10 +1,3 @@
-/* 
-const initialItems = [
-  { id: 1, description: "Passports", quantity: 2, packed: false },
-  { id: 2, description: "Socks", quantity: 12, packed: false },
-];
-*/
-
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
 
 * {
@@ -101,7 +94,8 @@ input {
 .list ul {
   list-style: none;
   width: 80%;
-  overflow: scroll;
+  overflow: auto;
+  min-height: 42px;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -128,7 +122,7 @@ input[type="checkbox"] {
   border: none;
   font-size: 1.8rem;
   padding: 0.8rem;
-  transform: translateY(2px);
+  /* transform: translateY(2px); */
 }
 
 .stats {
