@@ -9,17 +9,17 @@ export default function App() {
 
   useEffect(() => {
     const storedItems = JSON.parse(localStorage.getItem("packingList"));
-    if (storedItems) {
+    if (storedItems && Array.isArray(storedItems)) {
       setItems(storedItems);
     }
   }, []);
 
+  // Save items to local storage whenever they change
   useEffect(() => {
     if (items.length > 0) {
       localStorage.setItem("packingList", JSON.stringify(items));
     }
   }, [items]);
-
   function handleAddItems(item) {
     setItems((items) => [...items, item]);
   }
