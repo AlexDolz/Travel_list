@@ -34,12 +34,38 @@ h1 {
   font-weight: 400;
   word-spacing: 30px;
   letter-spacing: -5px;
-  padding: 2.4rem 0;
+  padding: 2.4rem 2rem;
+}
+
+@media (max-width: 803px) {
+  h1 {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 715px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 620px) {
+  h1 {
+    font-size: 5.5rem;
+  }
+}
+@media (max-width: 574px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 530px) {
+  h1 {
+    font-size: 4.5rem;
+  }
 }
 
 .add-form {
   background-color: #e5771f;
-  padding: 2.8rem 0;
+  padding: 2.8rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,6 +75,37 @@ h1 {
 h3 {
   margin-right: 1.6rem;
   font-size: 2.4rem;
+}
+@media (max-width: 654px) {
+  h3 {
+    font-size: 2rem;
+  }
+  .add-form {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 514px) {
+  h3 {
+    font-size: 1.8rem;
+  }
+  .add-form {
+    gap: 1.2rem;
+  }
+}
+@media (max-width: 486px) {
+  .add-form {
+    gap: 2rem;
+  }
+}
+@media (max-width: 367px) {
+  h3 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 333px) {
+  h3 {
+    font-size: 1.5rem;
+  }
 }
 
 button,
@@ -63,6 +120,34 @@ input {
   font-weight: 700;
   font-size: 1.8rem;
   cursor: pointer;
+}
+@media (max-width: 419px) {
+  button,
+  select,
+  input {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 356px) {
+  button,
+  select,
+  input {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 341px) {
+  button,
+  select,
+  input {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 330px) {
+  button,
+  select,
+  input {
+    font-size: 0.9rem;
+  }
 }
 
 .add-form button {
@@ -90,6 +175,28 @@ input {
   font-weight: 700;
   margin: 0 0.8rem;
 }
+@media (max-width: 440px) {
+  .actions {
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .actions button,
+  .list select {
+    font-size: 1.2rem;
+  }
+  select option {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 346px) {
+  select option {
+    font-size: 0.7rem;
+  }
+}
 
 .list ul {
   list-style: none;
@@ -102,6 +209,22 @@ input {
   gap: 1.2rem;
   justify-content: center;
   align-content: start;
+}
+@media (max-width: 640px) {
+  .list ul {
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  }
+  li span {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 540px) {
+  .list ul {
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  }
+  li span {
+    font-size: 2rem;
+  }
 }
 
 .list li {
@@ -129,5 +252,21 @@ input[type="checkbox"] {
   background-color: #76c7ad;
   text-align: center;
   font-weight: 700;
-  padding: 3.2rem 0;
+  padding: 3.2rem 2rem;
+}
+
+@media (max-width: 524px) {
+  .stats em {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 367px) {
+  .stats em {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 331px) {
+  .stats em {
+    font-size: 1.7rem;
+  }
 }
