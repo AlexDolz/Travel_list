@@ -14,12 +14,14 @@ export default function App() {
     }
   }, []);
 
-  // Save items to local storage whenever they change
   useEffect(() => {
     if (items.length > 0) {
       localStorage.setItem("packingList", JSON.stringify(items));
+    } else {
+      localStorage.removeItem("packingList");
     }
   }, [items]);
+
   function handleAddItems(item) {
     setItems((items) => [...items, item]);
   }
